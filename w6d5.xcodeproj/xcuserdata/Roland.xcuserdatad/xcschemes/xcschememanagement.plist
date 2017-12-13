@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Temp.xcscheme</key>
+		<key>w6d5.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2A8E1E971FE1AA8D00BD5CC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A8E1EB31FE1AB8300BD5CC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
