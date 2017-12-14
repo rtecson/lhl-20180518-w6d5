@@ -28,11 +28,65 @@ class W6D5UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testNavigateThroughOnboarding() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        // Given -- no set up required
         
+        // When -- start app
+        let app = XCUIApplication()
+        
+        // Then -- onboarding screen 1 should be displayed
+        XCTAssert(app.staticTexts["onboardingScreen1"].label == "Onboarding Screen 1", "Expected to be displaying Onboarding Screen 1")
+        
+        // When -- swipe left again
+        app.swipeLeft()
+
+        // Then -- onboarding screen 2 should be displayed
+        XCTAssert(app.staticTexts["onboardingScreen2"].label == "Onboarding Screen 2", "Expected to be displaying Onboarding Screen 2")
+        
+        // When -- swipe left again
+        app.swipeLeft()
+
+        // Then -- onboarding screen 3 should be displayed
+        XCTAssert(app.staticTexts["onboardingScreen3"].label == "Onboarding Screen 3", "Expected to be displaying Onboarding Screen 3")
+        
+        // When -- swipe left again
+        app.swipeLeft()
+        
+        // Then -- no more pages, onboarding screen 3 should still be displayed
+        XCTAssert(app.staticTexts["onboardingScreen3"].label == "Onboarding Screen 3", "Expected to be displaying Onboarding Screen 3")
+        
+        // When -- swipe right
+        app.swipeRight()
+
+        // Then -- onboarding screen 2 should be displayed
+        XCTAssert(app.staticTexts["onboardingScreen2"].label == "Onboarding Screen 2", "Expected to be displaying Onboarding Screen 2")
+        
+        // When -- swipe right again
+        app.swipeRight()
+
+        // Then -- onboarding screen 1 should be displayed
+        XCTAssert(app.staticTexts["onboardingScreen1"].label == "Onboarding Screen 1", "Expected to be displaying Onboarding Screen 1")
+        
+        // When -- swipe right again
+        app.swipeRight()
+        
+        // Then -- no more pages, onboarding screen 1 should still be displayed
+        XCTAssert(app.staticTexts["onboardingScreen1"].label == "Onboarding Screen 1", "Expected to be displaying Onboarding Screen 1")
+
+        // When -- swipe right until we get to last onboarding screen
+        app.swipeLeft()
+        app.swipeLeft()
+        
+        // Then -- dismiss button should be displayed
+        XCTAssert(app.buttons["dismissButton"].exists, "Expected dismiss button to be displayed")
+        
+        // When -- tap on dismisss button
+        app.buttons["dismissButton"].tap()
+        
+        // Then -- main screen should be displayed
+        XCTAssert(app.staticTexts["mainScreen"].label == "Main Screen", "Expected Main Screen to be displayed")
     }
-    
 }

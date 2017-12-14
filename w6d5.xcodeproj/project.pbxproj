@@ -369,7 +369,7 @@
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
 				INFOPLIST_FILE = w6d5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.Temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.w6d5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,7 +384,7 @@
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
 				INFOPLIST_FILE = w6d5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.Temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.w6d5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,13 +396,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
-				INFOPLIST_FILE = TempUITests/Info.plist;
+				INFOPLIST_FILE = w6d5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.TempUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.w6d5UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Temp;
+				TEST_TARGET_NAME = w6d5;
 			};
 			name = Debug;
 		};
@@ -411,13 +412,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
-				INFOPLIST_FILE = TempUITests/Info.plist;
+				INFOPLIST_FILE = w6d5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.TempUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lighthouselabs.w6d5UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Temp;
+				TEST_TARGET_NAME = w6d5;
 			};
 			name = Release;
 		};
